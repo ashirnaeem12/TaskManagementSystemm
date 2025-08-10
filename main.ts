@@ -37,8 +37,13 @@ async function main() {
   console.log(" Completed Tasks:", manager.getTasksByStatus(TaskStatus.Completed));
 
  // Filter tasks by user. 
-  const userId = users[0].id;
-  console.log(` Tasks assigned to ${users[0].name}:`, manager.getTasksByUser(userId));
+  // const userId = users[0].id;
+  // console.log(` Tasks assigned to ${users[0].name}:`, manager.getTasksByUser(userId));
+
+  for(const user of users){
+    const userTasks =manager.getTasksByUser(user.id)
+    console.log(`Tasks assigned to ${user.name}:`,userTasks)
+  }
 
 // • Use paginate to return only 2 tasks per page and log the first page. 
 
