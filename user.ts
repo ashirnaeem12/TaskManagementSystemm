@@ -1,4 +1,4 @@
-import { IUser } from "./interface";
+import { IUser } from "./IntUser";
 import { Task } from "./task";
 
 export class User implements IUser {

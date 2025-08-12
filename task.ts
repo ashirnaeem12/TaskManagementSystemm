@@ -1,6 +1,6 @@
-import { ITask } from "./interface";
+import { ITask } from "./IntTask";
 import { TaskStatus } from "./enum";
-import { IUser } from "./interface";
+import { IUser } from "./IntUser";
 
 export class Task implements ITask {
   constructor(

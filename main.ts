@@ -1,4 +1,5 @@
-import { fetchUsers, fetchTasks } from "./aysnc";
+import { fetchUsers, } from "./fetchUser";
+import { fetchTasks, } from "./fetchTask";
 import { TaskManager } from "./taskManager";
 import { TaskStatus } from "./enum";
 import { paginate } from "./paginate";

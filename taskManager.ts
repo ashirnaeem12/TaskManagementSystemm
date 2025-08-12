@@ -33,7 +33,7 @@ getTasksByStatus(status: TaskStatus): Task[] {
    getTasksByUser(userId: number): Task[] {
     const otasks: Task[] = []
       for (const t of this.task){
-        if(userId ===t.assignee?.id){
+        if(userId ===t.assignee?.id){       
             otasks.push(t)
         }
     }
